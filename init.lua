@@ -19,7 +19,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "tokyonight-night",
+  colorscheme = "onedark_vivid",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
