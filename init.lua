@@ -74,6 +74,7 @@ return {
         hcl = "terraform"
       }
     }
+    vim.lsp.set_log_level("off")
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {
