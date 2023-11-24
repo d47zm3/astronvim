@@ -75,6 +75,16 @@ return {
       }
     }
     vim.lsp.set_log_level("off")
+    vim.api.nvim_create_autocmd("BufNewFile", {
+      desc = "Set Terraform Variables Proper Type",
+      pattern = "*.tfvars",
+      command = "set filetype=terraform",
+    })
+    vim.api.nvim_create_autocmd("BufRead", {
+      desc = "Set Terraform Variables Proper Type",
+      pattern = "*.tfvars",
+      command = "set filetype=terraform",
+    })
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {
